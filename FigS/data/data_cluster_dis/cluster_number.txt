@@ -1,0 +1,12 @@
+Human	272
+Monkey	495
+Rabbit	332
+GuineaPig	425
+Mouse	71
+Rat	183
+GoldenHamster	348
+ChineseHamster	401
+Dog	409
+Pig	202
+Goat	352
+Zebrafish	502
