@@ -50,8 +50,9 @@ dds <- estimateSizeFactors(dds)
 normalized_counts <- counts(dds, normalized=TRUE)
 write.table(normalized_counts, file="miRNA_normalized_counts.txt", sep="\t", quote=F, col.names=NA)
 
-c12 <- c("#E31A1C", "#FB9A99", "#1F78B4", "#A6CEE3", "#33A02C", "#B2DF8A",  
-         "#FF7F00", "#FDBF6F", "#6A3D9A", "#CAB2D6", "#B15928", "#666666")
+c12 <- c("#E31A1C", "#FB9A99", "#1F78B4", "#A6CEE3", "#8C510A", "#BF812D",  
+         "#FF7F00", "#FDBF6F", "#6A3D9A", "#CAB2D6", "#252525", "#666666")
+
 p <- data.melt %>% as_tibble()%>% filter(value >0)%>%dplyr::count(variable) %>% 
   mutate(Species=species) %>%
   ggplot(aes(x=Species, y=n, fill=Species, color=Species)) + 
@@ -110,8 +111,9 @@ pca2$Species <- species
 labx <- paste("PC1", sprintf('(%0.1f%%)', 100 * pca$sdev[1]^2/sum(pca$sdev^2)))
 laby <- paste("PC2", sprintf('(%0.1f%%)', 100 * pca$sdev[2]^2/sum(pca$sdev^2)))
 
-c12 <- c("#E31A1C", "#FB9A99", "#1F78B4", "#A6CEE3", "#33A02C", "#B2DF8A",  
-         "#FF7F00", "#FDBF6F", "#6A3D9A", "#CAB2D6", "#B15928", "#666666")
+c12 <- c("#E31A1C", "#FB9A99", "#1F78B4", "#A6CEE3", "#8C510A", "#BF812D",  
+         "#FF7F00", "#FDBF6F", "#6A3D9A", "#CAB2D6", "#252525", "#666666")
+
 p <- ggplot(pca2, aes(x=PC1, y=PC2, color=Species)) +
   geom_point(size=6, alpha=0.8) +labs(x=labx, y=laby) + 
   scale_fill_manual(values = c12) + scale_color_manual(values = c12)+ 
