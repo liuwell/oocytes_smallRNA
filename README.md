@@ -10,3 +10,7 @@ Small RNAs are essential for germ cell development and fertilization. However, f
 The raw data were deposited at NCBI GEO under the accession number: [GSE200470](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE200470). 
 
 The processed data and code can also be downloaded from [zenodo](https://zenodo.org/records/10682583).
+
+### Citation
+To cite use of these scripts or parts thereof, please use:  
+...  
