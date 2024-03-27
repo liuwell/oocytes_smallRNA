@@ -13,4 +13,4 @@ The processed data and code can also be downloaded from [![DOI](https://zenodo.o
 
 ### Citation
 To cite use of these scripts or parts thereof, please use:  
-...  
+Hou, L., Liu, W. et al. Divergent composition and transposon-silencing activity of small RNAs in mammalian oocytes. Genome Biology 25, 80 (2024). https://doi.org/10.1186/s13059-024-03214-w
